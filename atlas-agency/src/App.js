@@ -9,23 +9,18 @@ function App() {
   return (
 <div className="page-wrap">
   <header className="page-header">
-    Atlas Agency
     <NavBar />
   </header>
   <article className="page-art">
-    Art 
     <Article />
   </article>
   <main className="page-main">
-    main
     <Main />
   </main>
   <aside className="page-sidebar">
-    Aside
     <Aside />
   </aside>
   <footer className="page-footer">
-    Footer
     <Footer />
   </footer>
 </div>
