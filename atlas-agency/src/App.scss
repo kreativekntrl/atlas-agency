@@ -70,11 +70,11 @@
 //MAIN
   .page-main {
     grid-column: 1 / -1;
-    background: #dcedc8;
+    // background: #dcedc8;
   }
 .loco::after {
     content: "Los Angeles";
-    font-size: 20px;
+    font-size: 30px;
 }
 .local-employees::after {
     content: "45";

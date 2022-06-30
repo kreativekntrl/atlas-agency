@@ -8,15 +8,15 @@ const Main = () => {
                 <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="0" borderStyle="solid" icon="map" iconColor="rgba(52,198,234,1)" backgroundColor="rgba(26,166,233,0)" iconSize="1" roundness="50%" url="#" size="30" />
                 </div>
                 <div className="stats">
-                <hr />
+                <hr style={{width: "30px", height: "2px", color: "black"}}/>
                 <p className="local-employees">Local Employees: </p>
                 <p className="total-employees">Total Employees: </p>
                 <p className="founded-in">Founded In: </p>
                 </div>
             </div>
-            <div className="content-container" style={{textAlign: "left", backgroundColor: "white", padding: "15px", borderRadius: "8px", marginBottom: "10px"}}>
+            <div className="content-container" style={{textAlign: "left", backgroundColor: "white", padding: "15px", borderRadius: "8px", border: "2px black solid", marginBottom: "10px"}}>
                 <h2>Welcome to Atlas Agency,</h2>
-                <hr />
+                <hr style={{width: "30px", height: "2px", color: "black"}}/>
                 <p>We are the home of leading ad technology in Los Angeles, Ca.</p>
                 <p>Atlas Agency is a company that is on the cutting edge of computer science and media capabilities. We strive to provide our clients with tools to maxamize their advertising and media presence.</p>
             </div>
