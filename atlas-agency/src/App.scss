@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
 // :root {
 //     --light: white;
 //     --accent: #c9a6ac; 
@@ -9,7 +10,6 @@
   }
   body {
     background-color: var(--light);
-    // padding: 5px;
     height: 100vh;
     margin: 0;
   
@@ -23,7 +23,6 @@
     display: grid;
     grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);
     grid-template-rows: min-content min-content 1fr min-content;
-    // gap: 1px;
   
     > * {
       padding: 1rem;
@@ -39,19 +38,22 @@
       }
     }
   }
+  //HEADER
   .page-header {
     grid-column: 1 / -1;   
     background-color: var(--darkest);
     margin: 0 15px 0 15px;
   }
+  //SIDEBAR
   .page-sidebar {
     grid-column: 1 / -1;
     background: #e1bee7;
   }
+  //ARTICLE
   .page-art {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    // background-image: url('./images/artImg.jpg');
+    // background-image: url('./images/Free_Sample_By_Wix\ \(1\).jpg');
     background-color: gray;
     opacity: .8;
   }
@@ -62,12 +64,31 @@
 
   .page-art h1, p {
     opacity: 1;
-    // text-shadow: 2px 2px gray;
+    font-family: 'Vidaloka', serif;
+    text-Shadow: 0 2px 4px rgb(0 0 0 / 20%), 0 1px 10px rgb(0 0 0 / 12%), 0 4px 5px rgb(0 0 0 / 14%);
   }
+//MAIN
   .page-main {
     grid-column: 1 / -1;
     background: #dcedc8;
   }
+.loco::after {
+    content: "Los Angeles";
+    font-size: 20px;
+}
+.local-employees::after {
+    content: "45";
+    float: right;
+}
+.total-employees::after {
+    content: "100";
+    float: right;
+}
+.founded-in::after {
+    content: "2022";
+    float: right;
+}
+//FOOTER
   .page-footer {
     grid-column: 1 / -1;
     background: #ffecb3;
