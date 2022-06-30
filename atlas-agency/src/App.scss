@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
-// :root {
-//     --light: white;
-//     --accent: #c9a6ac; 
-//     --dark: #924d59;
-//     --darkest: #924d59;  
-// }
+:root {
+    --light: white;
+    --accent: #c9a6ac; 
+    --dark: #924d59;
+    --darkest: #301934;  
+}
 * {
     box-sizing: border-box;
   }
   body {
-    background-color: var(--light);
+    // background-color: var(--light);
     height: 100vh;
     margin: 0;
   
     font: 500 100% system-ui, sans-serif;
   }
   .page-wrap {
-    background-color: var(--light);
+    // background-color: var(--light);
     height: 100vh;
     box-shadow: 0 0 3px rgba(black, 0.33);
   
@@ -42,7 +42,7 @@
   .page-header {
     grid-column: 1 / -1;   
     background-color: var(--darkest);
-    margin: 0 15px 0 15px;
+    // margin: 0 15px 0 15px;
   }
   //SIDEBAR
   .page-sidebar {
@@ -53,9 +53,11 @@
   .page-art {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    // background-image: url('./images/Free_Sample_By_Wix\ \(1\).jpg');
-    background-color: gray;
+    background: var(--darkest) url(./images/360_F_320544571_jNg9ktjriptFiOGal3jL3UhEemd3zXvZ.jpg);
     opacity: .8;
+  }
+  .page-art::after {
+    background-image: linear-gradient(180deg,transparent,var(--black));
   }
   .page-art div {
     opacity: 1;    
@@ -70,7 +72,8 @@
 //MAIN
   .page-main {
     grid-column: 1 / -1;
-    // background: #dcedc8;
+    background-color: var(--darkest);
+    padding: 0;
   }
 .loco::after {
     content: "Los Angeles";
