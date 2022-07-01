@@ -1,24 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 :root {
     --light: white;
     --accent: #c9a6ac; 
-    --dark: #924d59;
+    --grey: #7f8398;
     --darkest: #301934;  
 }
 * {
     box-sizing: border-box;
   }
   body {
-    // background-color: var(--light);
     height: 100vh;
     margin: 0;
   
     font: 500 100% system-ui, sans-serif;
   }
   .page-wrap {
-    // background-color: var(--light);
     height: 100vh;
-    box-shadow: 0 0 3px rgba(black, 0.33);
   
     display: grid;
     grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);
@@ -31,10 +29,8 @@
   
     @media (max-width: 600px) {
       grid-template-columns: 100%;
-    //   grid-template-rows: auto;
       > * {
         grid-column: 1 / -1 !important;
-        // grid-row: auto !important;
       }
     }
   }
@@ -42,7 +38,6 @@
   .page-header {
     grid-column: 1 / -1;   
     background-color: var(--darkest);
-    // margin: 0 15px 0 15px;
   }
   //SIDEBAR
   .page-sidebar {
@@ -56,15 +51,12 @@
     background: var(--darkest) url(./images/360_F_320544571_jNg9ktjriptFiOGal3jL3UhEemd3zXvZ.jpg);
     opacity: .8;
   }
-  .page-art::after {
-    background-image: linear-gradient(180deg,transparent,var(--black));
-  }
   .page-art div {
     opacity: 1;    
     color: white;    
   } 
 
-  .page-art h1, p {
+  .page-art h1 {
     opacity: 1;
     font-family: 'Vidaloka', serif;
     text-Shadow: 0 2px 4px rgb(0 0 0 / 20%), 0 1px 10px rgb(0 0 0 / 12%), 0 4px 5px rgb(0 0 0 / 14%);
@@ -79,17 +71,32 @@
     content: "Los Angeles";
     font-size: 30px;
 }
+.stats {
+  color: var(--grey);
+}
+.local-employees::before {
+  content: "👤";
+}
 .local-employees::after {
     content: "45";
     float: right;
+    color: black;
+}
+.total-employees::before {
+  content: "👥";
 }
 .total-employees::after {
     content: "100";
     float: right;
+    color: black;
+}
+.founded-in::before {
+  content: "🗓";
 }
 .founded-in::after {
     content: "2022";
     float: right;
+    color: black;
 }
 //FOOTER
   .page-footer {
