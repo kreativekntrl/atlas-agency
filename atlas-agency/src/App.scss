@@ -94,9 +94,13 @@
 //FOOTER
   .page-footer {
     grid-column: 1 / -1;
-    background: #ffecb3;
+    background-color: var(--darkest);
+    color: #c4c2d3;
+    font-size: 20px;
   }
-  
+svg {
+  margin: 5px;
+}
   details p {
     text-transform: none;
     text-align: left;
